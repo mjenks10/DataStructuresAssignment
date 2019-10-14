@@ -1,0 +1,22 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Index</title>
+</head>
+<body>
+    <div class="w3-bar w3-dark-grey">
+        <a href="@Url.Action("Index", "Stack")" class="w3-bar-item w3-button w3-hover-light-green">Stack</a>
+        <a href="@Url.Action("Index", "Queue")" class="w3-bar-item w3-button w3-hover-light-green">Queue</a>
+        <a href="@Url.Action("Index", "Dictionary")" class="w3-bar-item w3-button w3-hover-light-green">Dictionary</a>
+        <a href="@Url.Action("Index", "Exit")" class="w3-bar-item w3-button w3-hover-light-green">Exit</a>
+    </div>
+</body>
+</html>

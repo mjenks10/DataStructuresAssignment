@@ -1,0 +1,31 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <title>Stack Index</title>
+</head>
+<body>
+    <div class="w3-sidebar w3-light-grey w3-bar-block" style="width:25%">
+        <h3 class="w3-bar-item">Stack Menu</h3>
+        <a href="@Url.Action("AddOne", "Stack")" class="w3-bar-item w3-button w3-hover-light-green">Add One Item to Stack</a>
+        <a href="@Url.Action("HugeList", "Stack")" class="w3-bar-item w3-button w3-hover-light-green">Add Huge List of Items to Stack</a>
+        <a href="@Url.Action("Display", "Stack")" class="w3-bar-item w3-button w3-hover-light-green">Display Stack</a>
+        <a href="@Url.Action("DeleteOne", "Stack")" class="w3-bar-item w3-button w3-hover-light-green">Delete from Stack</a>
+        <a href="@Url.Action("Clear", "Stack")" class="w3-bar-item w3-button w3-hover-light-green">Clear Stack</a>
+        <a href="@Url.Action("Search", "Stack")" class="w3-bar-item w3-button w3-hover-light-green">Search Stack</a>
+        <a href="@Url.Action("MainMenu", "Stack")" class="w3-bar-item w3-button w3-hover-light-green">Return to Main Menu</a>
+
+    </div>
+    @foreach (var sData in ViewBag.MyStack)
+    {
+        <p>@sData</p>
+    }
+</body>
+</html>
